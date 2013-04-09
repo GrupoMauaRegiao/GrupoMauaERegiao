@@ -12,7 +12,34 @@
   </head>
   <body>
     <div id="pagina">
+      <div class="home">
+        
+        <div class="esquerda">
+          <div class="balao">
+            <img src="imagens/balao.png" alt="" />
+          </div>
+        </div> <!-- #Esquerda -->
 
+        <div class="direita">
+          <div class="frase">
+            <img src="imagens/frase.png" alt="" />
+          </div>
+        </div> <!-- #Direita -->
+
+        <div class="logotipo">
+          <img src="imagens/logotipo-grupo-maua-e-regiao.png" alt="" />
+        </div>
+
+        <div class="navegacao">
+          <ul>
+            <li><a href="#">. Início</a></li>
+            <li><a href="#">. O Grupo</a></li>
+            <li><a href="#">. Empresas</a></li>
+            <li><a href="#">. Contato</a></li>
+          </ul> 
+        </div>
+
+      </div> <!-- #Home -->
     </div> <!-- #pagina -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
