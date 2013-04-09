@@ -1,0 +1,20 @@
+@import "normalize.scss";
+
+/*!
+  Grupo Mauá e Região de Comunicação styles | 2013 | compramaua.com.br 
+*/
+
+$fonte:'Lato',Tahoma,sans-serif;
+
+@mixin WidthHeight($width,$height) {
+  width:$width;
+  height:$height;
+}
+
+*::selection{ background:rgb(252,252,15); }
+
+html{ background:rgb(0,0,0); }
+
+#pagina{
+
+}
