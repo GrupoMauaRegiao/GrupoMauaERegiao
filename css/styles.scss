@@ -13,17 +13,135 @@ $fonte:'Lato',Tahoma,sans-serif;
 
 *::selection{ background:rgb(252,252,15); }
 
-html{ background:rgb(0,0,0); }
+@-webkit-keyframes girarPagina{
+  0% {
+    -webkit-transform:rotateX(0);
+    -moz-transform:rotateX(0);
+    -o-transform:rotateX(0);
+    transform:rotateX(0);
+  }
+  100% {
+    -webkit-transform:translateX(960px) rotateX(90deg) rotateY(90deg) rotateZ(180deg);
+    -moz-transform:translateX(960px) rotateX(90deg) rotateY(90deg) rotateZ(180deg);
+    -o-transform:translateX(960px) rotateX(90deg) rotateY(90deg) rotateZ(180deg);
+    transform:translateX(960px) rotateX(90deg) rotateY(90deg) rotateZ(180deg);
+  }
+}
 
-#pagina{
-  -webkit-transition:all 0.5s linear;
-  -moz-transition:all 0.5s linear;
-  -o-transition:all 0.5s linear;
-  transition:all 0.5s linear;
-  position:relative;
-  top:0;
-  overflow:hidden;
+.animar{
+  -webkit-animation:girarPagina 2s linear;
+  -moz-animation:girarPagina 2s linear;
+  -o-animation:girarPagina 2s linear;
+  animation:girarPagina 2s linear;
+}
+
+html,
+body{
+  height:100%;
+  overflow:auto;
+}
+
+body{
   background:rgb(28,83,137) url('../imagens/background.jpg') repeat-x fixed;
   background-size:cover;
-  @include WidthHeight(100%,100%);
+  -webkit-box-shadow:
+    inset 50px 35px 500px rgb(87,101,156),
+    inset -15px -160px 400px rgb(87,101,156);
+  -moz-box-shadow:
+    inset 50px 35px 500px rgb(87,101,156),
+    inset -15px -160px 400px rgb(87,101,156);
+  -o-box-shadow:
+    inset 50px 35px 500px rgb(87,101,156),
+    inset -15px -160px 400px rgb(87,101,156);
+  box-shadow:
+    inset 50px 35px 500px rgb(87,101,156),
+    inset -15px -160px 400px rgb(87,101,156);
+}
+
+.interna{
+  background:rgb(28,83,137) url('../imagens/background-interna.jpg') repeat-x fixed !important;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  -o-box-shadow:none;
+  box-shadow:none;
+}
+
+#pagina{
+  padding:100px 0;
+
+  .home{
+    margin:0 auto;
+    @include WidthHeight(960px,auto);
+
+    ul{
+      display:inline;
+      list-style-type:none;
+
+      li{
+        display:inline;
+        margin:0 0 0 50px;
+
+        a{
+          font:bold 20px $fonte;
+          text-transform:uppercase;
+          text-decoration:none;
+          color:rgb(255,255,255);
+          border-radius:5px;
+          padding:5px;
+          -webkit-transition:background 0.2s linear;
+          -moz-transition:background 0.2s linear;
+          -o-transition:background 0.2s linear;
+          transition:background 0.2s linear;
+          outline:0;
+        }
+
+        a:hover{
+          background:rgba(87,101,156,0.2);
+        }
+
+        a:active{
+          background:rgb(237,50,55);
+        }
+      }
+    }
+
+    .esquerda,
+    .direita{
+      float:left;
+      margin:0 0 35px 0;
+      padding:150px 0 0 0;
+      border-bottom:2px solid rgb(255,255,255);
+    }
+
+    .esquerda{
+      @include WidthHeight(322px,500px);
+
+      img{ @include WidthHeight(321px,338px); }
+    }
+
+    .direita{
+      @include WidthHeight(637px,500px);
+
+      img{
+        margin:0 0 0 -50px;
+        @include WidthHeight(526px,200px);
+      }
+    }
+
+    .logotipo{
+      float:left;
+      width:120px;
+      height:123px;
+
+      img{
+        margin:-55px 0 0 -32px;
+        @include WidthHeight(140px,auto);
+      }
+    }
+
+    .navegacao{
+      float:left;
+      @include WidthHeight(760px,25px);
+    }
+  } // #Home
 }
