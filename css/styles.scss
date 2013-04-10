@@ -11,7 +11,7 @@ $fonte:'Lato',Tahoma,sans-serif;
   height:$height;
 }
 
-*::selection{ background:rgb(252,252,15); }
+*::selection{ background:rgb(245,131,61); }
 
 @-webkit-keyframes girarPagina{
   0% {
@@ -64,15 +64,23 @@ body{
   -moz-box-shadow:none;
   -o-box-shadow:none;
   box-shadow:none;
+
+  #pagina{
+    margin:-20px 0 0 0;
+    padding:0;
+  }
 }
 
 #pagina{
   padding:100px 0;
 
-  .home{
+  .home,
+  .interna{
     margin:0 auto;
     @include WidthHeight(960px,auto);
+  }
 
+  .home{
     ul{
       display:inline;
       list-style-type:none;
@@ -86,6 +94,9 @@ body{
           text-transform:uppercase;
           text-decoration:none;
           color:rgb(255,255,255);
+          -webkit-border-radius:5px;
+          -moz-border-radius:5px;
+          -o-border-radius:5px;
           border-radius:5px;
           padding:5px;
           -webkit-transition:background 0.2s linear;
@@ -95,13 +106,8 @@ body{
           outline:0;
         }
 
-        a:hover{
-          background:rgba(87,101,156,0.2);
-        }
-
-        a:active{
-          background:rgb(237,50,55);
-        }
+        a:hover{ background:rgba(87,101,156,0.2); }
+        a:active{ background:rgb(237,50,55); }
       }
     }
 
@@ -130,18 +136,91 @@ body{
 
     .logotipo{
       float:left;
-      width:120px;
-      height:123px;
+      @include WidthHeight(120px,123px);
 
       img{
         margin:-55px 0 0 -32px;
         @include WidthHeight(140px,auto);
       }
-    }
+    } // #Logotipo
 
     .navegacao{
       float:left;
       @include WidthHeight(760px,25px);
     }
   } // #Home
-}
+
+  .interna{
+    ul{
+      display:inline;
+      list-style-type:none;
+
+      li{
+        margin:0 0 30px 0;
+        display:block;
+
+        a{
+          font:bold 20px $fonte;
+          text-transform:uppercase;
+          text-decoration:none;
+          color:rgb(255,255,255);
+          -webkit-transition:background 0.2s linear;
+          -moz-transition:background 0.2s linear;
+          -o-transition:background 0.2s linear;
+          transition:background 0.2s linear;
+          -webkit-border-radius:5px;
+          -moz-border-radius:5px;
+          -o-border-radius:5px;
+          border-radius:5px;
+          padding:5px;
+          outline:0;
+        }
+
+        a:hover{ background:rgba(0,0,0,0.5); }
+        a:active{ background:rgb(237,50,55); }
+      }
+    } // #ul
+
+    .esquerda{
+      float:left;
+      border-right:1px solid rgb(255,255,255);
+      @include WidthHeight(300px,615px);
+
+      .logotipo{
+        padding:40px;
+        margin:0 0 35px 0;
+      }
+    } // #Esquerda
+
+    .direita{
+      float:left;
+      width:659px;
+
+      .informacao-instituicao{
+        font-family:$fonte;
+        color:rgb(255,255,255);
+        padding:230px 40px 40px;
+
+        p{ margin:0 0 30px 0; }
+
+        h1{
+          margin:0;
+          font-size:20px;
+          text-transform:uppercase;
+        }
+      } // #Informação da instituição
+    } // #Direita
+
+    .nome-pagina{
+      width:960px;
+      margin:0 0 50px 0;
+      border-bottom:1px solid rgb(255,255,255);
+      float:left;
+      font:bold 40px $fonte;
+      color:rgb(255,255,0);
+      text-transform:uppercase;
+
+      p{ margin:0 0 20px 0; }
+    } // #Nome da página
+  } // #Interna
+} // #Página
