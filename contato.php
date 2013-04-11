@@ -33,7 +33,7 @@
         <div class="direita">
           <div class="localizacao">
             <div class="mapa">
-
+              <div id="map-canvas"></div>
             </div>
 
             <div class="endereco">
@@ -50,6 +50,7 @@
     </div> <!-- #pagina -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9vwy72asMQwHF9T4zqK0HP6Q9htHZJZ0&amp;sensor=true"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

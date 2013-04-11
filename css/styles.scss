@@ -11,6 +11,10 @@ $fonte:'Lato',Tahoma,sans-serif;
   height:$height;
 }
 
+@mixin tamanhoMapa() {
+  @include WidthHeight(595px,340px);
+}
+
 *::selection{ background:rgb(245,131,61); }
 
 @-webkit-keyframes girarPagina{
@@ -209,6 +213,17 @@ body{
           text-transform:uppercase;
         }
       } // #Informação da instituição
+
+      .localizacao{
+        padding:30px;
+        margin:180px 0 0 0;
+
+        .mapa{
+         @include tamanhoMapa();
+
+          #map-canvas{ @include tamanhoMapa(); }
+        }
+      }
     } // #Direita
 
     .nome-pagina{
