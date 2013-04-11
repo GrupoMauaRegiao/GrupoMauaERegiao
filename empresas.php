@@ -32,7 +32,7 @@
 
         <div class="direita">
           <div class="apresentacao-slides">
-          
+            
           </div>
         </div> <!-- #Direita -->
 
@@ -44,6 +44,7 @@
     </div> <!-- #pagina -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http:////cdnjs.cloudflare.com/ajax/libs/jquery.cycle/2.9999.8/jquery.cycle.all.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
