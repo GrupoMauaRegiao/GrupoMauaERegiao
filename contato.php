@@ -37,7 +37,14 @@
             </div>
 
             <div class="endereco">
-
+              <p>
+                Rua Clodoaldo Portugal Caribé, 276 <br />
+                Vila Assis Brasil - Mauá - SP. <br />
+                CEP: 09370-620
+              </p>
+              <p class="maior">
+                <span>+55 (11)</span> 4513-1591
+              </p>
             </div>
           </div>
         </div> <!-- #Direita -->
