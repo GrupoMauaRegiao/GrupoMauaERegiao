@@ -200,10 +200,70 @@ body{
       float:left;
       width:659px;
 
+      .apresentacao-slides{
+        width:565px;
+        margin:180px 40px 40px 90px;
+
+        .empresa{
+          text-align:center;
+
+          .imagem{
+            img{
+              @include WidthHeight(480px,410px);
+              -webkit-box-shadow:0 30px 50px rgba(0,0,0,0.3);
+              -moz-box-shadow:0 30px 50px rgba(0,0,0,0.3);
+              -o-box-shadow:0 30px 50px rgba(0,0,0,0.3);
+              box-shadow:0 30px 50px rgba(0,0,0,0.3);
+              -webkit-border-radius:5px;
+              -moz-border-radius:5px;
+              -o-border-radius:5px;
+              border-radius:5px;
+            }
+          }
+
+          .nome-empresa{
+            text-transform:uppercase;
+            font:30px 'Lato',Arial,sans-serif;
+            color:rgb(255,255,255);
+
+            span{
+              font-weight:900;
+              color:rgb(255,255,0);
+            }
+          }
+        }
+      }
+
+      .controles{
+        position:relative;
+        float:left;
+        z-index:9999;
+        margin:-385px 0 0 55px;
+
+        .anterior,
+        .proximo{
+          -webkit-border-radius:50px;
+          -moz-border-radius:50px;
+          -o-border-radius:50px;
+          border-radius:50px;
+          cursor:pointer;
+          background:rgba(255,255,255,0.9) url('../imagens/setas-controle.png') no-repeat 20px;
+          padding:10px;
+          float:left;
+          @include WidthHeight(50px,50px);
+        }
+
+        .anterior:hover,
+        .proximo:hover{ background:rgb(255,255,255) url('../imagens/setas-controle.png') no-repeat 20px; }
+
+        .anterior{ margin-right:410px; }
+        .proximo{ background-position:-49px !important; }
+      }
+
       .informacao-instituicao{
         font-family:$fonte;
         color:rgb(255,255,255);
-        padding:230px 40px 40px;
+        margin:180px 40px 40px;
 
         p{ margin:0 0 30px 0; }
 
@@ -215,8 +275,7 @@ body{
       } // #Informação da instituição
 
       .localizacao{
-        padding:30px;
-        margin:180px 0 0 0;
+        margin:180px 40px 40px;
 
         .mapa{
           border:2px solid rgb(255,255,255);

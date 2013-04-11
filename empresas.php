@@ -32,8 +32,39 @@
 
         <div class="direita">
           <div class="apresentacao-slides">
-            
+            <div class="empresa">
+              <div class="imagem">
+                <img src="imagens/empresas/portal.jpg" alt="" />
+              </div>
+              <div class="nome-empresa">
+                <p><span>Portal</span> Mauá e Região</p>
+              </div>
+            </div> <!-- #Empresa -->
+
+            <div class="empresa">
+              <div class="imagem">
+                <img src="imagens/empresas/revista.jpg" alt="" />
+              </div>
+              <div class="nome-empresa">
+                <p><span>Revista</span> Mauá e Região</p>
+              </div>
+            </div> <!-- #Empresa -->
+
+            <div class="empresa">
+              <div class="imagem">
+                <img src="imagens/empresas/jornal.jpg" alt="" />
+              </div>
+              <div class="nome-empresa">
+                <p><span>Jornal</span> Mauá e Região</p>
+              </div>
+            </div> <!-- #Empresa -->
+          </div> <!-- #Apresentação de slides -->
+          
+          <div class="controles">
+            <div class="anterior"></div>
+            <div class="proximo"></div>
           </div>
+
         </div> <!-- #Direita -->
 
         <div class="nome-pagina">
@@ -42,9 +73,9 @@
 
       </div> <!-- #Interna -->
     </div> <!-- #pagina -->
-
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http:////cdnjs.cloudflare.com/ajax/libs/jquery.cycle/2.9999.8/jquery.cycle.all.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/2.9999.8/jquery.cycle.all.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

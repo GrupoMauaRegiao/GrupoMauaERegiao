@@ -19,6 +19,19 @@ $(document).ready(function () {
     });
   }
 
+  function ativarCycle() {
+    $('.apresentacao-slides').cycle({
+      fx: 'shuffle',
+      easing: 'easeOutBack',
+      timeout: 5000,
+      pause: 1,
+      speed: 500,
+      prev: '.anterior',
+      next: '.proximo'
+    });
+  }
+
   ativarAnimacao();
+  ativarCycle();
 
 });

@@ -36,7 +36,7 @@
             <li><a href="o-grupo">. O Grupo</a></li>
             <li><a href="empresas">. Empresas</a></li>
             <li><a href="contato">. Contato</a></li>
-          </ul> 
+          </ul>
         </div>
 
       </div> <!-- #Home -->
