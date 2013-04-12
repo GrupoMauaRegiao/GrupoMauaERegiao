@@ -23,7 +23,6 @@ function googleMaps() {
   ];
 
   localizacao = new google.maps.LatLng(-23.67914, -46.46164);
-
   mapOptions = {
     center: localizacao,
     zoom: 17,
@@ -49,10 +48,11 @@ function googleMaps() {
   marcador.setAnimation(google.maps.Animation.DROP);
 
   google.maps.event.addListener(marcador, 'click', function () {
-    var expr;
+    var expr, infowindow;
     expr = marcador.getAnimation() !== null
       ? marcador.setAnimation(null)
       : marcador.setAnimation(google.maps.Animation.BOUNCE);
+    infowindow = new google.maps.InfoWindow();
   });
 } // #Google Maps
 google.maps.event.addDomListener(window, 'load', googleMaps);
