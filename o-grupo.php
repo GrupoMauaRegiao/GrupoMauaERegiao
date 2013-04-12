@@ -32,17 +32,17 @@
 
         <div class="direita">
           <div class="informacao-instituicao">
-            <h1>Lorem</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit ex machina dotmer.</p>
+            <h1>Missão</h1>
+            <p>O Grupo Mauá &amp; Região de Comunicação é uma empresa jornalística que nasce com a missão de oferecer informação de qualidade em periódicos de distribuição patrocinada por parceiros empresariais e comerciais da região de Mauá, Ribeirão Pires e Rio Grande da Serra.</p>
 
-            <h1>Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <h1>Visão</h1>
+            <p>Tornar-se empresa rentável no segmento de informação e ser referência regional em jornalismo, publicidade e divulgação, com o objetivo de atingir resultados positivos à nossos clientes e conquistar a preferência de leitores da região.</p>
 
-            <h1>Consectetuer</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa.</p>
+            <h1>Valores</h1>
+            <p>Manter foco nas necessidades de nossos clientes e oferecer informação atualizada de qualidade para nossos leitores. Promover valorização e entrosamento de funcionários e colaboradores, com estímulo ao trabalho em equipe e incentivando práticas de cidadania, responsabilidade social e preservação do meio ambiente, além de ética e moral profissional.</p>
 
-            <h1>Samet</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit nam.</p>
+            <h1>Política de qualidade</h1>
+            <p>Com capacitação e motivação de funcionários, buscamos manter jornalismo imparcial, dinâmico e moderno, com compromisso de satisfazer necessidades e requisitos de nossos clientes, com inovação, desenvolvimento tecnológico e melhoria contínua de nossos serviços.</p>
           </div>
         </div> <!-- #Direita -->
 
@@ -54,6 +54,7 @@
     </div> <!-- #pagina -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -1,6 +1,15 @@
 "use strict";
 $(document).ready(function () {
 
+  function efeitoEntrada() {
+    var pagina;
+    pagina = $('#pagina');
+
+    setTimeout(function() {
+      pagina.show(1000, 'easeInOutElastic');
+    }, 1);
+  }
+
   function criarSlidesEmpresas() {
     if (typeof informacoes !== 'undefined') {
       var json, empresas, html, i, len, slidesContainer;
@@ -11,14 +20,16 @@ $(document).ready(function () {
 
       for (i = 0, len = json.length; i < len; i += 1) {
         html[i] =
-          "<div class='empresa'>" +
-            "<div class='imagem'>" +
-              "<img src='imagens/empresas/" + informacoes.empresas[i].imagem + "' alt='' />" +
+          "<a href='" + informacoes.empresas[i].url + "' target='_blank'>" +
+            "<div class='empresa'>" +
+              "<div class='imagem'>" +
+                "<img src='imagens/empresas/" + informacoes.empresas[i].imagem + "' alt='' />" +
+              "</div>" +
+              "<div class='nome-empresa'>" +
+                "<p>" + informacoes.empresas[i].empresa.replace(/(^\w+)/, '<span>$1</span>') + "</p>" +
+              "</div>" +
             "</div>" +
-            "<div class='nome-empresa'>" +
-              "<p>" + informacoes.empresas[i].empresa.replace(/(^\w+)/, '<span>$1</span>') + "</p>" +
-            "</div>" +
-          "</div>";
+          "</a>";
         empresas += html[i];
       }
       slidesContainer.html(empresas);
@@ -39,6 +50,7 @@ $(document).ready(function () {
     }
   }
 
+  efeitoEntrada();
   criarSlidesEmpresas();
   ativarCycle();
 

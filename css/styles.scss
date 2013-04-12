@@ -17,28 +17,6 @@ $fonte:'Lato',Tahoma,sans-serif;
 
 *::selection{ background:rgb(245,131,61); }
 
-@-webkit-keyframes girarPagina{
-  0% {
-    -webkit-transform:rotateX(0);
-    -moz-transform:rotateX(0);
-    -o-transform:rotateX(0);
-    transform:rotateX(0);
-  }
-  100% {
-    -webkit-transform:translateX(960px) rotateX(90deg) rotateY(90deg) rotateZ(180deg);
-    -moz-transform:translateX(960px) rotateX(90deg) rotateY(90deg) rotateZ(180deg);
-    -o-transform:translateX(960px) rotateX(90deg) rotateY(90deg) rotateZ(180deg);
-    transform:translateX(960px) rotateX(90deg) rotateY(90deg) rotateZ(180deg);
-  }
-}
-
-.animar{
-  -webkit-animation:girarPagina 2s linear;
-  -moz-animation:girarPagina 2s linear;
-  -o-animation:girarPagina 2s linear;
-  animation:girarPagina 2s linear;
-}
-
 html,
 body{
   height:100%;
@@ -48,34 +26,21 @@ body{
 body{
   background:rgb(28,83,137) url('../imagens/background.jpg') repeat-x fixed;
   background-size:cover;
-  -webkit-box-shadow:
-    inset 50px 35px 500px rgb(87,101,156),
-    inset -15px -160px 400px rgb(87,101,156);
-  -moz-box-shadow:
-    inset 50px 35px 500px rgb(87,101,156),
-    inset -15px -160px 400px rgb(87,101,156);
-  -o-box-shadow:
-    inset 50px 35px 500px rgb(87,101,156),
-    inset -15px -160px 400px rgb(87,101,156);
-  box-shadow:
-    inset 50px 35px 500px rgb(87,101,156),
-    inset -15px -160px 400px rgb(87,101,156);
 }
 
 .interna{
   background:rgb(28,83,137) url('../imagens/background-interna.jpg') repeat-x fixed !important;
-  -webkit-box-shadow:none;
-  -moz-box-shadow:none;
-  -o-box-shadow:none;
-  box-shadow:none;
+  background-size:cover;
 
   #pagina{
     margin:-20px 0 0 0;
     padding:0;
+    display:none;
   }
 }
 
 #pagina{
+  display:none;
   padding:100px 0;
 
   .home,
@@ -119,18 +84,19 @@ body{
     .direita{
       float:left;
       margin:0 0 35px 0;
-      padding:150px 0 0 0;
+      padding:50px 0 0 0;
       border-bottom:2px solid rgb(255,255,255);
     }
 
     .esquerda{
+      margin:0 0 0 40px;
       @include WidthHeight(322px,500px);
 
       img{ @include WidthHeight(321px,338px); }
     }
 
     .direita{
-      @include WidthHeight(637px,500px);
+      @include WidthHeight(595px,500px);
 
       img{
         margin:0 0 0 -50px;
@@ -143,7 +109,7 @@ body{
       @include WidthHeight(120px,123px);
 
       img{
-        margin:-55px 0 0 -32px;
+        margin:-55px 0 0 5px;
         @include WidthHeight(140px,auto);
       }
     } // #Logotipo
@@ -204,6 +170,11 @@ body{
         width:565px;
         margin:180px 40px 40px 90px;
 
+        a{
+          cursor:pointer;
+          text-decoration:none;
+        }
+
         .empresa{
           text-align:center;
 
@@ -238,7 +209,7 @@ body{
         position:relative;
         float:left;
         z-index:9999;
-        margin:-385px 0 0 55px;
+        margin:170px 0 0 55px;
 
         .anterior,
         .proximo{
