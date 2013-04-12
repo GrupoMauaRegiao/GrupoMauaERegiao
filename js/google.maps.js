@@ -1,5 +1,20 @@
+"use strict";
 function googleMaps() {
-  var estilosMapa, localizacao, mapOptions, mapa, iconeMarcador, marcador;
+  var infowindow, conteudoInfoWindow, estilosMapa, localizacao, mapOptions, mapa, iconeMarcador, marcador;
+  conteudoInfoWindow =
+    "<div class='infowindow'>" +
+      "<div class='nome-empresa'>" +
+        "<p>Grupo Mauá e Regiao de Comunicação</p>" +
+      "</div>" +
+      "<div class='endereco-mapa'>" +
+        "<p>" +
+          "Rua Clodoaldo Portugal Caribé, 276 <br />" +
+          "Vila Assis Brasil - Mauá - SP. <br />" +
+          "CEP: 09370-620" +
+        "</p>" +
+      "</div>" +
+    "</div>";
+
   estilosMapa = [
     {
       stylers: [
@@ -29,7 +44,7 @@ function googleMaps() {
     minZoom: 15,
     maxZoom: 18,
     streetViewControl: false,
-    mapTypeControl: false,
+    mapTypeControl: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
 
@@ -47,12 +62,18 @@ function googleMaps() {
   marcador.setMap(mapa);
   marcador.setAnimation(google.maps.Animation.DROP);
 
+  infowindow = new google.maps.InfoWindow({
+    content: conteudoInfoWindow
+  });
+
   google.maps.event.addListener(marcador, 'click', function () {
-    var expr, infowindow;
+    var expr;
     expr = marcador.getAnimation() !== null
       ? marcador.setAnimation(null)
       : marcador.setAnimation(google.maps.Animation.BOUNCE);
-    infowindow = new google.maps.InfoWindow();
+    expr = infowindow.getMap()
+      ? infowindow.close()
+      : infowindow.open(mapa, marcador);
   });
 } // #Google Maps
 google.maps.event.addDomListener(window, 'load', googleMaps);
