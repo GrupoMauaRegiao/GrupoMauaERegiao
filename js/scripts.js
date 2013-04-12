@@ -1,5 +1,6 @@
 "use strict";
 $(document).ready(function () {
+
   function ativarAnimacao() {
     var pagina, link;
     pagina = $('.home');
@@ -19,6 +20,28 @@ $(document).ready(function () {
     });
   }
 
+  function criarSlidesEmpresas() {
+    var json, empresas, html, i, len, slidesContainer;
+    json = informacoes.empresas; // empresas.js
+    empresas = "";
+    html = [];
+    slidesContainer = $('.apresentacao-slides');
+
+    for (i = 0, len = json.length; i < len; i += 1) {
+      html[i] =
+        "<div class='empresa'>" +
+          "<div class='imagem'>" +
+            "<img src='imagens/empresas/" + informacoes.empresas[i].imagem + "' alt='' />" +
+          "</div>" +
+          "<div class='nome-empresa'>" +
+            "<p>" + informacoes.empresas[i].empresa + "</p>" +
+          "</div>" +
+        "</div>";
+      empresas += html[i];
+    }
+    slidesContainer.html(empresas);
+  }
+
   function ativarCycle() {
     $('.apresentacao-slides').cycle({
       fx: 'shuffle',
@@ -32,6 +55,7 @@ $(document).ready(function () {
   }
 
   ativarAnimacao();
+  criarSlidesEmpresas();
   ativarCycle();
 
 });
