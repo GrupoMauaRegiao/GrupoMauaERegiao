@@ -34,7 +34,7 @@ $(document).ready(function () {
             "<img src='imagens/empresas/" + informacoes.empresas[i].imagem + "' alt='' />" +
           "</div>" +
           "<div class='nome-empresa'>" +
-            "<p>" + informacoes.empresas[i].empresa + "</p>" +
+            "<p>" + informacoes.empresas[i].empresa.replace(/(^\w+)/, '<span>$1</span>') + "</p>" +
           "</div>" +
         "</div>";
       empresas += html[i];
