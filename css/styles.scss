@@ -182,14 +182,14 @@ body{
       @include WidthHeight(300px,615px);
 
       .logotipo{
-        padding:40px;
+        padding:100px 40px 40px;
         margin:0 0 35px 0;
       }
     } // #Esquerda
 
     .direita{
       float:left;
-      width:659px;
+      @include WidthHeight(659px,725px);
 
       .apresentacao-slides{
         width:565px;

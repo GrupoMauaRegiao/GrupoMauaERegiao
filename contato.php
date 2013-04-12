@@ -59,7 +59,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9vwy72asMQwHF9T4zqK0HP6Q9htHZJZ0&amp;sensor=true"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/google.maps.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/google.maps.min.js"></script>
   </body>
 </html>
