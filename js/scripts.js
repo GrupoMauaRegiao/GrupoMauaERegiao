@@ -25,7 +25,7 @@ $(document).ready(function () {
 
       setInterval(function () {
         body.css('background-position', '0,' + coords.x() + 'px ' + coords.y() + '%');
-      }, 1000);
+      }, 500);
     }
   }
 

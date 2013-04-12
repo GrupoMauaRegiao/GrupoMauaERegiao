@@ -52,7 +52,7 @@ function googleMaps() {
 
   mapa.setOptions({styles: estilosMapa});
 
-  iconeMarcador = 'http://grupomauaeregiao.com.br/testing/imagens/icone.png';
+  iconeMarcador = 'http://grupomauaeregiao.com.br/imagens/icone.png';
   marcador = new google.maps.Marker({
     position: localizacao,
     title: "Grupo Mauá e Região de Comunicação",
