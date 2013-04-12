@@ -5,9 +5,28 @@ $(document).ready(function () {
     var pagina;
     pagina = $('#pagina');
 
-    setTimeout(function() {
+    setTimeout(function () {
       pagina.show(1000, 'easeInOutElastic');
     }, 1);
+  }
+
+  function animacaoBackground() {
+    var body, coords;
+    body = $('body');
+
+    if (body.attr('class') !== 'interna') {
+      coords = {};
+      coords.x = function () {
+        return Math.floor(Math.random() * 50);
+      };
+      coords.y = function () {
+        return Math.floor(Math.random() * 10);
+      };
+
+      setInterval(function () {
+        body.css('background-position', '0,' + coords.x() + 'px ' + coords.y() + '%');
+      }, 1000);
+    }
   }
 
   function criarSlidesEmpresas() {
@@ -51,6 +70,7 @@ $(document).ready(function () {
   }
 
   efeitoEntrada();
+  animacaoBackground();
   criarSlidesEmpresas();
   ativarCycle();
 

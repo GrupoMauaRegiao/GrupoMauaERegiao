@@ -24,9 +24,30 @@ body{
 }
 
 body{
-  background:rgb(28,83,137) url('../imagens/background.jpg') repeat-x fixed;
-  background-size:cover;
+  background-image:
+    url('../imagens/background-shadow.png'),
+    url('../imagens/background.jpg');
+  background-color:rgb(28,83,137);
+  background-attachment:fixed,fixed;
+  background-repeat:no-repeat,repeat-x;
+  -webkit-transition:background 1s linear;
+  -moz-transition:background 1s linear;
+  -o-transition:background 1s linear;
+  transition:background 1s linear;
 }
+
+@media screen and (min-width:1500px) {
+  body{
+    background-size:cover,cover;
+  }
+}
+
+@media screen and (max-width:1500px) {
+  body{
+    background-size:cover,auto;
+  }
+}
+
 
 .interna{
   background:rgb(28,83,137) url('../imagens/background-interna.jpg') repeat-x fixed !important;
@@ -59,6 +80,10 @@ body{
         margin:0 0 0 50px;
 
         a{
+          -webkit-text-shadow:0px 1px 10px rgb(87,101,156);
+          -moz-text-shadow:0px 1px 10px rgb(87,101,156);
+          -o-text-shadow:0px 1px 10px rgb(87,101,156);
+          text-shadow:0px 1px 10px rgb(87,101,156);
           font:bold 20px $fonte;
           text-transform:uppercase;
           text-decoration:none;
@@ -75,7 +100,7 @@ body{
           outline:0;
         }
 
-        a:hover{ background:rgba(87,101,156,0.2); }
+        a:hover{ background:rgba(0,0,0,0.5); }
         a:active{ background:rgb(237,50,55); }
       }
     }
