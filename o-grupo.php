@@ -21,10 +21,10 @@
 
           <div class="navegacao">
             <ul>
-              <li><a href="index.php">. Início</a></li>
-              <li><a href="o-grupo.php">. O Grupo</a></li>
-              <li><a href="empresas.php">. Empresas</a></li>
-              <li><a href="contato.php">. Contato</a></li>
+              <li><a href="inicial">. Início</a></li>
+              <li><a href="o-grupo">. O Grupo</a></li>
+              <li><a href="empresas">. Empresas</a></li>
+              <li><a href="contato">. Contato</a></li>
             </ul> 
           </div>
 
