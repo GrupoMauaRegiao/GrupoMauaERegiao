@@ -1,7 +1,7 @@
 @import "normalize.scss";
 
 /*!
-  Grupo Mauá e Região de Comunicação styles | 2013 | compramaua.com.br 
+  Grupo Mauá e Região de Comunicação styles | 2013 | grupomauaeregiao.com.br
 */
 
 $fonte:'Lato',Tahoma,sans-serif;
@@ -47,7 +47,6 @@ body{
     background-size:cover,auto;
   }
 }
-
 
 .interna{
   background:rgb(28,83,137) url('../imagens/background-interna.jpg') repeat-x fixed !important;
@@ -109,19 +108,18 @@ body{
     .direita{
       float:left;
       margin:0 0 35px 0;
-      padding:50px 0 0 0;
       border-bottom:2px solid rgb(255,255,255);
     }
 
     .esquerda{
       margin:0 0 0 40px;
-      @include WidthHeight(322px,500px);
+      @include WidthHeight(322px,450px);
 
       img{ @include WidthHeight(321px,338px); }
     }
 
     .direita{
-      @include WidthHeight(595px,500px);
+      @include WidthHeight(595px,450px);
 
       img{
         margin:0 0 0 -50px;
@@ -151,7 +149,7 @@ body{
       list-style-type:none;
 
       li{
-        margin:0 0 30px 0;
+        margin:0 0 20px 0;
         display:block;
 
         a{
@@ -182,18 +180,18 @@ body{
       @include WidthHeight(300px,615px);
 
       .logotipo{
-        padding:100px 40px 40px;
+        padding:60px 40px 20px;
         margin:0 0 35px 0;
       }
     } // #Esquerda
 
     .direita{
       float:left;
-      @include WidthHeight(659px,725px);
+      @include WidthHeight(659px,660px);
 
       .apresentacao-slides{
         width:565px;
-        margin:180px 40px 40px 90px;
+        margin:180px 40px 40px 75px;
 
         a{
           cursor:pointer;
@@ -234,7 +232,7 @@ body{
         position:relative;
         float:left;
         z-index:9999;
-        margin:170px 0 0 55px;
+        margin:170px 0 0 40px;
 
         .anterior,
         .proximo{
