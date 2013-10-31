@@ -16,6 +16,12 @@ var informacoes = {
       "empresa": "Jornal Mauá e Região",
       "imagem": "jornal.jpg",
       "url": "http://jornalmauaeregiao.com.br"
+    },
+
+    {
+      "empresa": "TV Mauá e Região",
+      "imagem": "tv.jpg",
+      "url": "http://tvmauaeregiao.com.br"
     }
   ]
 };
