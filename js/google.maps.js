@@ -8,9 +8,8 @@ function googleMaps() {
       "</div>" +
       "<div class='endereco-mapa'>" +
         "<p>" +
-          "Rua Clodoaldo Portugal Caribé, 276 <br />" +
-          "Vila Assis Brasil - Mauá - SP. <br />" +
-          "CEP: 09370-620" +
+          "Rua Vitório Veneto, 355 <br />" +
+          "Vila Vitória - Mauá - SP." +
         "</p>" +
       "</div>" +
     "</div>";
@@ -37,7 +36,7 @@ function googleMaps() {
     }
   ];
 
-  localizacao = new google.maps.LatLng(-23.67914, -46.46164);
+  localizacao = new google.maps.LatLng(-23.675265, -46.45794);
   mapOptions = {
     center: localizacao,
     zoom: 17,
