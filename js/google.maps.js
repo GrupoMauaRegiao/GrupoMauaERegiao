@@ -4,7 +4,7 @@ function googleMaps() {
   conteudoInfoWindow =
     "<div class='infowindow'>" +
       "<div class='nome-empresa'>" +
-        "<p>Grupo Mauá e Regiao de Comunicação</p>" +
+        "<p>Grupo Mauá e Região de Comunicação</p>" +
       "</div>" +
       "<div class='endereco-mapa'>" +
         "<p>" +
